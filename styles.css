@@ -623,3 +623,48 @@ a {
     transform: translateY(-10px);
   }
 }
+/* ================================
+   MOBILE OVERFLOW FIXES
+================================ */
+@media (max-width: 768px) {
+  /* Prevent horizontal overflow on mobile */
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  /* Scale hero "SACHIN" button for mobile */
+  .button {
+    font-size: clamp(1.2em, 5vw, 2em);
+    letter-spacing: clamp(1px, 1.5vw, 3px);
+  }
+
+  /* Hide fixed email on mobile to prevent overflow */
+  .fixed-email {
+    display: none;
+  }
+
+  /* Scale footer contact email text */
+  #contact h2 {
+    font-size: clamp(1.5rem, 5vw, 4rem);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    padding: 0 1rem;
+  }
+
+  /* Ensure contact section has padding */
+  #contact {
+    padding: 2rem 1rem;
+  }
+
+  /* Contact info section responsive */
+  .space-y-4 {
+    overflow-x: hidden;
+  }
+
+  .space-y-4 p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+}
