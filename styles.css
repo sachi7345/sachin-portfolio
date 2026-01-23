@@ -634,8 +634,14 @@ a {
   }
 
   /* Scale loading screen text for mobile */
+  .loading-text {
+    max-width: 100vw;
+    overflow: hidden;
+  }
+
   .loading-text span {
-    font-size: clamp(40px, 15vw, 120px);
+    font-size: clamp(20px, 12vw, 120px);
+    letter-spacing: -0.05em;
   }
 
   /* Scale hero "SACHIN" button for mobile */
