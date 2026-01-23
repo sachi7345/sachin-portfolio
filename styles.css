@@ -633,6 +633,11 @@ a {
     overflow-x: hidden;
   }
 
+  /* Scale loading screen text for mobile */
+  .loading-text span {
+    font-size: clamp(40px, 15vw, 120px);
+  }
+
   /* Scale hero "SACHIN" button for mobile */
   .button {
     font-size: clamp(1.2em, 5vw, 2em);
